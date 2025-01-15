@@ -118,7 +118,7 @@ const Home_Slide_section = () => {
                 </button>
 
                 {/* Dots Indicator */}
-                <div className="flex justify-center mt-4 absolute bottom-4 sm:bottom-6 md:bottom-4 lg:bottom-12 right-[-25px] md:right-28 lg:right-20 xl:right-44 ">
+                <div className="flex justify-center mt-4 absolute bottom-4 sm:bottom-6 md:bottom-3 lg:bottom-3 right-[-25px] md:right-28 lg:right-20 xl:right-44 ">
                     {sliderImages.map((_, index) => (
                         <button
                             key={index}

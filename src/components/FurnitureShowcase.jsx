@@ -8,73 +8,72 @@ import img6 from '../images/furniture_showcase/6.png';
 import img7 from '../images/furniture_showcase/7.png';
 import img8 from '../images/furniture_showcase/8.png';
 import img9 from '../images/furniture_showcase/9.png';
-
+import fixedImg from '../images/others/constant.jpeg';
 
 const FurnitureSection = () => {
     return (
-        <div className="bg-[#fefaf5] p-6 sm:p-12 text-center">
+        <div className=" text-center mt-10">
             <p className="text-gray-400">Share your setup with <br /></p>
             <h2 className="text-center text-md sm:text-2xl lg:text-3xl font-bold mb-6">
                 #FuniroFurniture
             </h2>
-            <div className="furniture grid lg:grid-cols-3 gap-10 object-contain w-full h-auto overflow-hidden relative">
+            <div className="furniture hidden xl:grid grid-cols-1 md:grid-cols-[2fr_1.1fr_2.1fr] gap-2 relative">
                 {/* Left Section */}
-                <div className="flex flex-wrap gap-4">
-                    <img
-                        src={img1}
-                        alt="Furniture 1"
-                        className="w-[274px] h-[382px] object-contain absolute left-[-10%] "
-                    />
-                    <img
-                        src={img2}
-                        alt="Furniture 2"
-                        className="w-[381px] h-[323px] object-contain absolute bottom-[15%] left-[-10%]"
-                    />
-                    <img
-                        src={img3}
-                        alt="Furniture 3"
-                        className="w-[451px] h-[312px] object-contain absolute top-[8%] left-[3.5%]"
-                    />
-                    <img
-                        src={img4}
-                        alt="Furniture 4"
-                        className="w-[344px] h-[242px] object-contain absolute bottom-[24.5%] left-[11%]"
-                    />
+                <div className="left_section flex h-[750px]">
+                    <div className="h-[382px] w-[78px] bg-slate-950 absolute ">
+                        <img className="h-full w-full object-cover" src={img1} alt="Furniture 1" />
+                    </div>
+                    <div className="h-[312px] w-[451px] bg-green-200 absolute left-[6.5%] top-[9%] ">
+                        <img className="h-full w-full object-cover" src={img3} alt="Furniture 3" />
+
+                    </div>
+                    <div className="h-[323px] w-[140px] bg-red-400 absolute left-[0%] bottom-[5%]">
+                        <img className="h-full w-full object-cover" src={img2} alt="Furniture 2" />
+                    </div>
+                    <div className="h-[242px] w-[386px] bg-blue-400 absolute bottom-[16%] left-[11%] ">
+                        <img className="h-full w-full object-cover" src={img4} alt="Furniture 4" />
+                    </div>
                 </div>
 
+
                 {/* Middle Section */}
-                <div className="flex justify-center items-center">
-                    <img
-                        src={img5}
-                        alt="Furniture 5"
-                        className="w-[295] h-[392px] object-contain absolute top-[19%] left-[36.5%]"
-                    />
+                <div className="middle_secton h-[750px]">
+                    {/*  */}
+
+                    <div className="h-[392px] w-[295px] bg-slate-950 absolute top-[20%]">
+                        <img className="h-full w-full object-cover" src={img5} alt="" />
+                    </div>
+
                 </div>
 
                 {/* Right Section */}
-                <div className="flex flex-wrap gap-4">
-                    <img
-                        src={img6}
-                        alt="Furniture 6"
-                        className="w-full h-full object-contain absolute"
-                    />
-                    <img
-                        src={img7}
-                        alt="Furniture 7"
-                        className="w-[290] h-[348px] object-contain absolute"
-                    />
-                    <img
-                        src={img8}
-                        alt="Furniture 8"
-                        className="w-full h-[200px] object-cover"
-                    />
-                    <img
-                        src={img9}
-                        alt="Furniture 9"
-                        className="w-full h-[200px] object-cover"
-                    />
+                <div className="right_section flex h-[750px] ">
+                    <div className="h-[348px] w-[290px] bg-slate-950 absolute top-[8%]">
+                        <img className="h-full w-full object-cover" src={img6} alt="Furniture 6" />
+                    </div>
+                    <div className="h-[433px] w-[290px] bg-green-200 absolute right-[-1%] top-[-3.5%] ">
+                        <img className="h-full w-full object-cover" src={img7} alt="Furniture 7" />
+
+                    </div>
+                    <div className="h-[242px] w-[178px] bg-red-400 absolute right-[27.5%] bottom-[12%]">
+                        <img className="h-full w-full object-cover" src={img8} alt="Furniture 8" />
+
+                    </div>
+                    <div className="h-[196px] w-[258px] bg-blue-400 absolute bottom-[18%] right-[10%] ">
+
+                        <img className="h-full w-full object-cover" src={img9} alt="Furniture 9" />
+                    </div>
+
+
+
                 </div>
+               
+
+
             </div>
+             <div className="h-[200px] sm:h-[400px] w-full block xl:hidden">
+                    <img className="h-full w-full object-contain" src={fixedImg} alt="" />
+                </div>
 
         </div>
     );
